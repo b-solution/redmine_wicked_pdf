@@ -2,12 +2,15 @@
      image_tag "file:///#{WickedPdfHelper.root_path.join('public/plugin_assets/redmine_wicked_pdf', 'images', img)}", options
    end
    %>
-<%= wicked_pdf_image  'chilicon_logo_zugeschnitten.jpg' %>
+<span style="float: right;">
+
+<%= wicked_pdf_image  'logo.png' %>
+</span>
 
 <meta charset='utf-8' />
 <%= wicked_pdf_stylesheet_link_tag "application" -%>
 <%= wicked_pdf_javascript_include_tag "application" %>
-<div class="">
+<div style="float: right;">
  <table class="list issues <%= sort_css_classes %>" width="100px;">
   <thead>
     <tr>
